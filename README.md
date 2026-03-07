@@ -15,7 +15,7 @@ and RAG with frameworks like Hugging Face and LangChain.
 
 ## Courses
 
-1. [Machine Learning with Python](/C1-Machine-Learning-with-Python/README.md)
+1. [Machine Learning with Python](/01-machine-learning-with-python/README.md)
 2. [Introduction to Deep Learning & Neural Networks with Keras](https://www.coursera.org/learn/introduction-to-deep-learning-with-keras?specialization=ai-engineer)
 3. [Deep Learning with Keras and Tensorflow](https://www.coursera.org/learn/building-deep-learning-models-with-tensorflow?specialization=ai-engineer)
 4. [Introduction to Neural Networks and PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch?specialization=ai-engineer)
