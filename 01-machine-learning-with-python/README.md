@@ -32,8 +32,8 @@ and reinforce my skills.
 
 ## Modules
 
-1. [Introduction to Machine Learning](/C1-Machine-Learning-with-Python/M1-Introduction-to-Machine-Learning/README.md)
-2. Linear and Logistic Regression
+1. [Introduction to Machine Learning](/courses/01-machine-learning-with-python/modules/01-intro-to-ml/README.md)
+2. [Linear and Logistic Regression](/courses/01-machine-learning-with-python/modules/02-linear-and-logistic-regression/README.md)
 3. Building Supervised Learning Models
 4. Building Unsupervised Learning Models
 5. Evaluating and Validating Machine Learning Models
