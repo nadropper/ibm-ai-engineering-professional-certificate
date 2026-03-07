@@ -33,7 +33,7 @@ Here's what I achieved by the end of this module:
 * **Get hands-on practice** - Use scikit-learn to train and test models on 
   real datasets (not just toy examples)
 
-### Multiple Linear Regression  
+### [Multiple Linear Regression](/01-machine-learning-with-python/modules/02-linear-and-logistic-regression/multiple-linear-regression.md)
 * **Understand the differences** - How is multiple linear regression different 
   from simple? What scenarios call for each approach?
 * **Practice implementation** - Again, use scikit-learn but this time with 
@@ -80,5 +80,5 @@ can use.
 
 ## Assignments
 
-1. [Practice Quiz: Introduction to Machine Learning](/C1-Machine-Learning-with-Python/M1-Introduction-to-Machine-Learning/Quizzes/Practice-Quiz-Intro-to-ML.md)
-2. [Graded Quiz: Introduction to Machine Learning](/C1-Machine-Learning-with-Python/M1-Introduction-to-Machine-Learning/Quizzes/Graded-Quiz-Intro-to-ML.md)
+1. [Practice Quiz: Linear Regression](/01-machine-learning-with-python/modules/02-linear-and-logistic-regression/quizzes/linear-regression-quiz.md)
+

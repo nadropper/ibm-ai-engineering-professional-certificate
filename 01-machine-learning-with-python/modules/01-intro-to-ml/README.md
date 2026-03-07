@@ -194,5 +194,5 @@ a customer will unsubscribe within the next month.
 
 ## Assignments
 
-1. [Practice Quiz: Introduction to Machine Learning](/C1-Machine-Learning-with-Python/M1-Introduction-to-Machine-Learning/Quizzes/Practice-Quiz-Intro-to-ML.md)
-2. [Graded Quiz: Introduction to Machine Learning](/C1-Machine-Learning-with-Python/M1-Introduction-to-Machine-Learning/Quizzes/Graded-Quiz-Intro-to-ML.md)
+1. [Practice Quiz: Introduction to Machine Learning](/01-machine-learning-with-python/modules/01-intro-to-ml/quizzes/practice-quiz-intro-to-ml.md)
+2. [Graded Quiz: Introduction to Machine Learning](/01-machine-learning-with-python/modules/01-intro-to-ml/quizzes/quiz-intro-to-ml.md)
