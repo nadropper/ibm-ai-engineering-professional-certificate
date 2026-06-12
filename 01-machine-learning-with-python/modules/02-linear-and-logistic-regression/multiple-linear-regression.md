@@ -2,8 +2,7 @@
 
 ## What is Multiple Linear Regression?
 
-In **Simple Linear Regression** (SLR), we model the relationship
-between one input feature and one continuous output using a line:
+In **Simple Linear Regression** (SLR), we model the relationship between one input feature and one continuous output using a line:
 
 ```
 ŷ = θ₀ + θ₁x

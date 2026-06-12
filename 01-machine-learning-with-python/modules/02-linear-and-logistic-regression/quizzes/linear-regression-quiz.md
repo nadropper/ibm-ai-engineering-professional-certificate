@@ -1,10 +1,8 @@
 # Practice Quiz: Linear Regression
 
-
 ## Question 1
 
-**Which of the following regression methods is a modern machine learning
-technique?**
+**Which of the following regression methods is a modern machine learning technique?**
 
 a) Simple linear regression
 b) Linear regression
@@ -17,30 +15,20 @@ d) Polynomial regression
 
 #### a. Simple Linear Regression ✗
 
-**What it is:** Simple linear regression is a classical statistical method 
-that models the relationship between a single independent variable (predictor) 
-and a dependent variable (outcome) using a straight line.
+**What it is:** Simple linear regression is a classical statistical method that models the relationship between a single independent variable (predictor) and a dependent variable (outcome) using a straight line.
 
 **Why it's NOT modern:**
-- Originated in the early 19th century (developed by mathematicians like 
-  Legendre and Gauss around 1805-1809)
+- Originated in the early 19th century (developed by mathematicians like Legendre and Gauss around 1805-1809)
 - Part of classical statistics, not machine learning
 - Uses a simple mathematical formula: y = mx + b
 - Predates computers and machine learning as a field
-- While still widely used, it's a foundational statistical technique, not a 
-  modern ML approach
+- While still widely used, it's a foundational statistical technique, not a modern ML approach
 
-**Use case:** Predicting house prices based solely on square footage, or 
-temperature based on time of day.
-
----
+**Use case:** Predicting house prices based solely on square footage, or temperature based on time of day.
 
 #### b. Linear Regression ✗
 
-**What it is:** Linear regression is the general term for regression methods 
-that assume a linear relationship between input features and the output. This 
-includes both simple (one feature) and multiple (many features) linear 
-regression.
+**What it is:** Linear regression is the general term for regression methods that assume a linear relationship between input features and the output. This includes both simple (one feature) and multiple (many features) linear regression.
 
 **Why it's NOT modern:**
 - Also, a classical statistical method from the 1800s
@@ -50,16 +38,11 @@ regression.
 - While used in modern ML pipelines, the technique itself is classical
 - More of a statistical foundation that ML builds upon
 
-**Use case:** Predicting salary based on years of experience, education 
-level, and location (multiple linear regression).
-
----
+**Use case:** Predicting salary based on years of experience, education level, and location (multiple linear regression).
 
 #### c. Random Forest Regression ✓
 
-**What it is:** Random forest regression is an ensemble learning method that 
-builds multiple decision trees during training and outputs the average 
-prediction of all the trees.
+**What it is:** Random forest regression is an ensemble learning method that builds multiple decision trees during training and outputs the average prediction of all the trees.
 
 **Why it IS modern ML:**
 - Developed in 2001 by Leo Breiman (very recent compared to linear methods)
@@ -69,11 +52,9 @@ prediction of all the trees.
 - Handles non-linear relationships automatically
 - Requires computational power (built for the computer age)
 - Can capture complex patterns without explicit feature engineering
-- Uses techniques like bootstrap aggregating (bagging) and random feature 
-  selection
+- Uses techniques like bootstrap aggregating (bagging) and random feature selection
 - Provides feature importance rankings
-- Modern ML concept: no explicit mathematical formula you solve; instead, 
-  the algorithm learns patterns
+- Modern ML concept: no explicit mathematical formula you solve; instead, the algorithm learns patterns
 
 **Key ML characteristics:**
 - Non-parametric (doesn't assume a specific form for the relationship)
@@ -82,35 +63,22 @@ prediction of all the trees.
 - Can handle both numerical and categorical features
 - Commonly implemented in modern ML libraries (scikit-learn, XGBoost, etc.)
 
-**Use case:** Predicting house prices using dozens of features (location, 
-size, age, amenities, neighborhood crime rate, school ratings, etc.) with 
-complex, non-linear interactions.
-
----
+**Use case:** Predicting house prices using dozens of features (location, size, age, amenities, neighborhood crime rate, school ratings, etc.) with complex, non-linear interactions.
 
 #### d. Polynomial Regression ✗
 
-**What it is:** Polynomial regression extends linear regression by adding 
-polynomial terms (squared, cubed, etc.) of the features to capture curved 
-relationships.
+**What it is:** Polynomial regression extends linear regression by adding polynomial terms (squared, cubed, etc.) of the features to capture curved relationships.
 
 **Why it's NOT modern:**
-- Still fundamentally based on linear regression principles from classical 
-  statistics
-- Just transforms the features (x, x², x³) but uses the same old linear 
-  regression method
+- Still fundamentally based on linear regression principles from classical statistics
+- Just transforms the features (x, x², x³) but uses the same old linear regression method
 - Mathematical approach rather than "learning" approach
 - Technique has existed for over a century
-- While it can model non-linear relationships, it's still solving a linear 
-  equation (linear in the coefficients)
+- While it can model non-linear relationships, it's still solving a linear equation (linear in the coefficients)
 - Formula: y = a + bx + cx² + dx³ + ...
-- Doesn't involve the modern ML concepts like decision trees, ensembles, 
-  or iterative learning algorithms
+- Doesn't involve the modern ML concepts like decision trees, ensembles, or iterative learning algorithms
 
-**Use case:** Modeling the trajectory of a thrown ball (parabolic curve), or 
-growth patterns that follow polynomial curves.
-
----
+**Use case:** Modeling the trajectory of a thrown ball (parabolic curve), or growth patterns that follow polynomial curves.
 
 ### Summary Comparison
 
@@ -138,16 +106,13 @@ growth patterns that follow polynomial curves.
 - Typically, need larger datasets
 - Designed for computational implementation
 
-Random forest regression represents the modern ML paradigm of learning from 
-data rather than fitting predetermined mathematical functions.
+Random forest regression represents the modern ML paradigm of learning from data rather than fitting predetermined mathematical functions.
 
 ---
 
 ## Question 2
 
-**What type of regression would be most appropriate for predicting carbon 
-dioxide emissions when the independent variables considered are engine size 
-and number of cylinders?**
+**What type of regression would be most appropriate for predicting carbon dioxide emissions when the independent variables considered are engine size and number of cylinders?**
 
 > Answer: c. Multiple linear regression ✓
 
@@ -163,61 +128,42 @@ The question tells us:
 - Number of cylinders (discrete numeric variable)
 - **Count: 2 independent variables**
 
-**Key Decision Factor:** We have **multiple** independent variables (more 
-than one predictor).
+**Key Decision Factor:** We have **multiple** independent variables (more than one predictor).
 
 ### Explanation of Each Option
 
 #### a. Non-linear Regression ✗
 
-**What it is:** Regression methods that model non-linear (curved) 
-relationships between variables, such as exponential, logarithmic, or other 
-complex curves.
+**What it is:** Regression methods that model non-linear (curved) relationships between variables, such as exponential, logarithmic, or other complex curves.
 
 **Why it's NOT the best answer:**
 - The question doesn't indicate that the relationship is non-linear
-- While CO2 emissions might have some non-linear aspects, we should start 
-  with the simpler linear approach
-- Non-linear regression is typically used when we have evidence that a linear 
-  model won't work well
-- The relationship between engine size/cylinders and emissions is generally 
-  reasonably linear (bigger engines → more emissions)
-- We should follow Occam's Razor: start simple unless there's a reason for 
-  complexity
+- While CO2 emissions might have some non-linear aspects, we should start with the simpler linear approach
+- Non-linear regression is typically used when we have evidence that a linear model won't work well
+- The relationship between engine size/cylinders and emissions is generally reasonably linear (bigger engines → more emissions)
+- We should follow Occam's Razor: start simple unless there's a reason for complexity
 
-**When to use it:** When you have evidence of curved relationships, like 
-diminishing returns, exponential growth, or S-shaped curves that linear 
-models can't capture.
-
----
+**When to use it:** When you have evidence of curved relationships, like diminishing returns, exponential growth, or S-shaped curves that linear models can't capture.
 
 #### b. Logistic Regression ✗
 
-**What it is:** A classification algorithm used to predict categorical 
-outcomes (typically binary: yes/no, true/false, 0/1).
+**What it is:** A classification algorithm used to predict categorical outcomes (typically binary: yes/no, true/false, 0/1).
 
 **Why it's WRONG:**
 - Logistic regression is for **classification**, not regression
-- Our target variable (CO2 emissions) is **continuous** (could be 120g/km, 
-  145.7g/km, 200.3g/km, etc.), not categorical
+- Our target variable (CO2 emissions) is **continuous** (could be 120g/km, 145.7g/km, 200.3g/km, etc.), not categorical
 - Logistic regression outputs probabilities between 0 and 1
 - We're trying to predict an actual numeric value, not a category
 
-**When to use it:** Predicting whether emissions are "high" or "low" 
-(classification), whether a car passes emission standards (yes/no), or spam 
-detection (spam/not spam).
+**When to use it:** Predicting whether emissions are "high" or "low" (classification), whether a car passes emission standards (yes/no), or spam detection (spam/not spam).
 
 **Example of wrong application:**
 - Logistic regression output: "85% probability of high emissions"
 - What we actually need: "Predicted emissions: 175.3 g/km"
 
----
-
 #### c. Multiple Linear Regression ✓
 
-**What it is:** A regression method that models the relationship between 
-**multiple independent variables** (predictors) and one dependent variable 
-(outcome) using a linear equation.
+**What it is:** A regression method that models the relationship between **multiple independent variables** (predictors) and one dependent variable (outcome) using a linear equation.
 
 **Why it IS the correct answer:**
 
@@ -232,13 +178,12 @@ detection (spam/not spam).
 - Perfect match
 
 **3. Logical relationship:**
-- Engine size and CO2 emissions likely have a roughly linear relationship 
-  (larger engine → more fuel → more CO2)
-- Number of cylinders and CO2 emissions also likely linear (more cylinders → 
-  more power → more fuel → more CO2)
+- Engine size and CO2 emissions likely have a roughly linear relationship (larger engine → more fuel → more CO2)
+- Number of cylinders and CO2 emissions also likely linear (more cylinders → more power → more fuel → more CO2)
 - Both predictors contribute independently to emissions
 
 **The formula would look like:**
+
 ```
 CO2_emissions = β₀ + β₁(engine_size) + β₂(cylinders) + error
 ```
@@ -249,6 +194,7 @@ Where:
 - β₂ = coefficient for number of cylinders
 
 **Real-world example:**
+
 ```
 CO2 = 50 + (15 × engine_size) + (20 × cylinders)
 
@@ -259,16 +205,14 @@ CO2 = 160 g/km
 ```
 
 **4. Industry standard:**
+
 - This type of analysis is commonly done in automotive engineering
 - Environmental studies frequently use multiple linear regression
 - It's interpretable: you can explain how much each factor contributes
 
----
-
 #### d. Simple Linear Regression ✗
 
-**What it is:** A regression method that models the relationship between 
-**one independent variable** and one dependent variable using a straight line.
+**What it is:** A regression method that models the relationship between **one independent variable** and one dependent variable using a straight line.
 
 **Why it's NOT correct:**
 - We have **TWO** independent variables (engine size AND cylinders)
@@ -279,6 +223,7 @@ CO2 = 160 g/km
 **If we used simple linear regression:**
 
 Option 1 (using only engine size):
+
 ```
 CO2 = β₀ + β₁(engine_size)
 ```
@@ -286,9 +231,11 @@ CO2 = β₀ + β₁(engine_size)
 - Less accurate predictions
 
 Option 2 (using only cylinders):
+
 ```
 CO2 = β₀ + β₁(cylinders)
 ```
+
 - We'd be ignoring the engine size information
 - Less accurate predictions
 
@@ -296,8 +243,6 @@ CO2 = β₀ + β₁(cylinders)
 - We have valuable information from both variables
 - Both contribute to emissions
 - Ignoring one means losing predictive power
-
----
 
 ### Decision Tree for Choosing Regression Type
 
@@ -332,19 +277,15 @@ For our problem:
 | Relationship      | Linear        | Linear ✓        | Non-linear | Sigmoid     |
 | Our problem fits? | ✗             | ✓               | Maybe      | ✗           |
 
-The answer is **c. Multiple linear regression** because we have multiple 
-independent variables predicting a continuous outcome with an expected linear 
-relationship.
+The answer is **c. Multiple linear regression** because we have multiple independent variables predicting a continuous outcome with an expected linear relationship.
 
 ---
 
 ## Question 3
 
-**Why is ordinary least squares (OLS) regression's accuracy for complex data 
-sets limited?**
+**Why is ordinary least squares (OLS) regression's accuracy for complex data sets limited?**
 
-> Answer: c. OLS regression may inaccurately weigh outliers,
-> resulting in skewed outputs ✓
+> Answer: c. OLS regression may inaccurately weigh outliers, resulting in skewed outputs ✓
 
 ### Understanding OLS Regression
 
@@ -357,6 +298,7 @@ Before analyzing the options, let's clarify what OLS regression actually does:
 - It's the standard method used in linear regression
 
 **The squaring effect:**
+
 ```
 Small error: (2)² = 4
 Large error: (10)² = 100  (not just 5× larger, but 25× larger!)
@@ -387,20 +329,15 @@ This statement is completely backwards. OLS regression is actually:
 - Other classification algorithms
 
 **Why this option is factually incorrect:**
-- OLS is the foundation of **linear regression**, which is explicitly for 
-  continuous predictions
-- If OLS could only predict categorical outcomes, it wouldn't be useful for 
-  the vast majority of regression problems
+- OLS is the foundation of **linear regression**, which is explicitly for continuous predictions
+- If OLS could only predict categorical outcomes, it wouldn't be useful for the vast majority of regression problems
 - This is the exact opposite of OLS's actual purpose
-
----
 
 #### b. OLS regression requires extensive tuning and hyperparameter adjustments ✗
 
 **Why this is WRONG:**
 
-OLS regression is actually one of the **simplest** methods with minimal tuning 
-required.
+OLS regression is actually one of the **simplest** methods with minimal tuning required.
 
 **What OLS needs (very little):**
 - Your data (features and target variable)
@@ -429,32 +366,30 @@ required.
 - Results are reproducible and deterministic
 - Great for beginners and baseline models
 
----
-
 #### c. OLS regression may inaccurately weigh outliers, resulting in skewed outputs ✓
 
 **Why this IS CORRECT:**
 
-This is the fundamental limitation of OLS when dealing with complex, real-world 
-datasets that contain outliers.
+This is the fundamental limitation of OLS when dealing with complex, real-world datasets that contain outliers.
 
 **How OLS handles errors:**
 
 OLS minimizes the **sum of squared errors**:
+
 ```
 Error = Σ(actual - predicted)²
 ```
 
 **The outlier problem:**
 
-Because errors are **squared**, outliers have a disproportionately large 
-influence on the model.
+Because errors are **squared**, outliers have a disproportionately large influence on the model.
 
 **Example with numbers:**
 
 Imagine predicting house prices with these errors:
 
 **Normal data points (9 houses):**
+
 ```
 Error = $5,000 → Squared = $25,000,000
 Error = $8,000 → Squared = $64,000,000
@@ -464,6 +399,7 @@ Average contribution per house: ~$40,000,000
 ```
 
 **One outlier (1 house - maybe a data entry error):**
+
 ```
 Error = $500,000 → Squared = $250,000,000,000
 This single point contributes 6,250× more than a normal point!
@@ -471,11 +407,10 @@ This single point contributes 6,250× more than a normal point!
 
 **The consequence:**
 
-The model will **bend** or **tilt** the regression line to try to reduce this 
-massive squared error from the outlier, even if it means making predictions 
-worse for all the normal data points.
+The model will **bend** or **tilt** the regression line to try to reduce this massive squared error from the outlier, even if it means making predictions worse for all the normal data points.
 
 **Visual example:**
+
 ```
 Without outlier:          With outlier (OLS pulls line toward it):
     *                         *
@@ -512,14 +447,11 @@ Predicting employee salaries:
 - **Quantile regression** (focuses on medians instead of means)
 - **Tree-based methods** (naturally resistant to outliers)
 
----
-
 #### d. OLS regression cannot produce a best-fit line through the data ✗
 
 **Why this is WRONG:**
 
-This is completely false. Producing a best-fit line is **literally what OLS 
-does**.
+This is completely false. Producing a best-fit line is **literally what OLS does**.
 
 **What OLS stands for:**
 - **Ordinary Least Squares**
@@ -535,6 +467,7 @@ does**.
 **The mathematical guarantee:**
 
 OLS has a closed-form solution that is proven to give the optimal line:
+
 ```
 For simple linear regression:
 β₁ = Σ((xᵢ - x̄)(yᵢ - ȳ)) / Σ(xᵢ - x̄)²
@@ -544,22 +477,18 @@ This formula ALWAYS produces the best-fit line.
 ```
 
 **What "best-fit" means in OLS:**
-- The line that minimizes the sum of squared vertical distances from points 
-  to the line
+- The line that minimizes the sum of squared vertical distances from points to the line
 - It's mathematically optimal according to this specific criterion
 - There's no other line that would have a smaller sum of squared errors
 
 **The confusion might be:**
-- The best-fit line might not be a **good** fit if the relationship is 
-  non-linear
+- The best-fit line might not be a **good** fit if the relationship is non-linear
 - The best-fit line might be **skewed by outliers** (option c)
 - But OLS **definitely produces a best-fit line** - it's the core function
 
 **Analogy:**
-Saying "OLS cannot produce a best-fit line" is like saying "a calculator 
-cannot perform addition." It's the fundamental purpose of the tool.
 
----
+Saying "OLS cannot produce a best-fit line" is like saying "a calculator cannot perform addition." It's the fundamental purpose of the tool.
 
 ### Summary Comparison
 
@@ -596,16 +525,13 @@ cannot perform addition." It's the fundamental purpose of the tool.
    - Outliers dominate the optimization
    - Need robust alternatives for real-world data
 
-**The answer is c** because the sensitivity to outliers through squared error 
-minimization is the primary reason OLS regression has limited accuracy on 
-complex, real-world datasets.
+**The answer is c** because the sensitivity to outliers through squared error minimization is the primary reason OLS regression has limited accuracy on complex, real-world datasets.
 
 ---
 
 ## Question 3
 
-**What multiple linear regression model estimates the values of coefficients by 
-minimizing the Mean Squared Error (MSE)?**
+**What multiple linear regression model estimates the values of coefficients by minimizing the Mean Squared Error (MSE)?**
 
 > Answer: b. Ordinary least squares ✓
 
@@ -614,22 +540,18 @@ minimizing the Mean Squared Error (MSE)?**
 Let's break down what the question is asking:
 
 **Key terms:**
-- **Multiple linear regression model** - we're specifically talking about 
-  linear regression
+- **Multiple linear regression model** - we're specifically talking about linear regression
 - **Estimates coefficients** - finding the β values in the equation
 - **Minimizing MSE** - Mean Squared Error is the optimization criterion
 - **MSE formula**: MSE = (1/n) × Σ(actual - predicted)²
 
-The question wants to know which method finds the best coefficients (β values) 
-by making the MSE as small as possible.
+The question wants to know which method finds the best coefficients (β values) by making the MSE as small as possible.
 
 ### Explanation of Each Option
 
 #### a. Principal Component Analysis (PCA) ✗
 
-**What it is:** PCA is a dimensionality reduction technique that transforms 
-features into uncorrelated principal components that capture maximum variance 
-in the data.
+**What it is:** PCA is a dimensionality reduction technique that transforms features into uncorrelated principal components that capture maximum variance in the data.
 
 **Why it's WRONG:**
 
@@ -649,6 +571,7 @@ in the data.
 - It does NOT minimize prediction MSE
 
 **What PCA actually does:**
+
 ```
 Original features: x₁, x₂, x₃, ..., x₁₀
 ↓
@@ -664,6 +587,7 @@ Reduced features: PC₁, PC₂, PC₃ (capturing most variance)
 - You want to denoise data
 
 **PCA could be used WITH regression:**
+
 ```
 1. Apply PCA to reduce features
 2. Use OLS on the principal components
@@ -672,36 +596,34 @@ Reduced features: PC₁, PC₂, PC₃ (capturing most variance)
 But PCA itself is not the regression model.
 ```
 
----
-
 #### b. Ordinary Least Squares ✓
 
-**What it is:** OLS is the standard analytical method for estimating 
-regression coefficients by minimizing the sum of squared errors (which is 
-directly related to MSE).
+**What it is:** OLS is the standard analytical method for estimating regression coefficients by minimizing the sum of squared errors (which is directly related to MSE).
 
 **Why it IS CORRECT:**
 
 **1. Directly minimizes squared errors:**
 
 OLS minimizes the **Sum of Squared Errors (SSE)**:
+
 ```
 SSE = Σ(yᵢ - ŷᵢ)²
     = Σ(actual - predicted)²
 ```
 
 MSE is just SSE divided by n:
+
 ```
 MSE = (1/n) × SSE
 MSE = (1/n) × Σ(yᵢ - ŷᵢ)²
 ```
 
-Since (1/n) is a constant, minimizing SSE is **exactly the same** as 
-minimizing MSE!
+Since (1/n) is a constant, minimizing SSE is **exactly the same** as minimizing MSE!
 
 **2. Analytical solution:**
 
 OLS has a closed-form mathematical solution:
+
 ```
 For multiple linear regression:
 β = (XᵀX)⁻¹Xᵀy
@@ -728,6 +650,7 @@ This formula is **proven** to give the coefficients that minimize MSE.
 **Example:**
 
 For simple linear regression (y = β₀ + β₁x):
+
 ```
 Data: (x₁, y₁), (x₂, y₂), ..., (xₙ, yₙ)
 
@@ -748,21 +671,16 @@ These coefficients give the minimum possible MSE.
 - Implemented in all statistical software
 - The default method for linear regression
 
----
-
 #### c. Stochastic Gradient Descent ✗
 
-**What it is:** SGD is an **iterative optimization algorithm** that updates 
-coefficients using one (or a small batch of) randomly selected data point(s) 
-at a time.
+**What it is:** SGD is an **iterative optimization algorithm** that updates coefficients using one (or a small batch of) randomly selected data point(s) at a time.
 
 **Why it's WRONG (or rather, not the best answer):**
 
 **1. It's an optimization algorithm, not a model:**
 - SGD is a **method** for finding coefficients
 - It's not the model itself
-- Multiple different models can use SGD (neural networks, logistic regression, 
-  SVM, etc.)
+- Multiple different models can use SGD (neural networks, logistic regression, SVM, etc.)
 
 **2. It CAN minimize MSE, but it's not the standard for linear regression:**
 - SGD **can** be used to find linear regression coefficients
@@ -783,6 +701,7 @@ at a time.
 - **When computing (XᵀX)⁻¹ is too expensive** (very high dimensions)
 
 **How SGD works:**
+
 ```
 1. Start with random coefficients: β = [random values]
 2. Pick ONE random data point: (xᵢ, yᵢ)
@@ -793,6 +712,7 @@ at a time.
 ```
 
 **Comparison to OLS:**
+
 ```
 OLS: 
 - One calculation
@@ -806,17 +726,12 @@ SGD:
 ```
 
 **The key distinction:**
-The question asks about "**multiple linear regression model**" - this 
-typically means OLS, which is the standard. SGD is an alternative algorithm 
-that **could** be used, but it's not the standard answer.
 
----
+The question asks about "**multiple linear regression model**" - this typically means OLS, which is the standard. SGD is an alternative algorithm that **could** be used, but it's not the standard answer.
 
 #### d. Gradient Descent ✗
 
-**What it is:** Gradient descent is an **iterative optimization algorithm** 
-that updates coefficients by moving in the direction of steepest descent of 
-the error function, using the **entire dataset** at each step.
+**What it is:** Gradient descent is an **iterative optimization algorithm** that updates coefficients by moving in the direction of steepest descent of the error function, using the **entire dataset** at each step.
 
 **Why it's WRONG (similar reasoning to SGD):**
 
@@ -833,13 +748,13 @@ the error function, using the **entire dataset** at each step.
 **3. Iterative and approximate:**
 - Requires multiple iterations to converge
 - Needs tuning (learning rate)
-- Can get stuck in local minima (though MSE is convex, so this isn't an issue 
-  for linear regression)
+- Can get stuck in local minima (though MSE is convex, so this isn't an issue for linear regression)
 - More complex than necessary
 
 **4. Computational inefficiency for linear regression:**
 
 **Gradient Descent approach:**
+
 ```
 1. Initialize: β = [0, 0, 0, ...]
 2. Calculate predictions for ALL data: ŷ = Xβ
@@ -849,6 +764,7 @@ the error function, using the **entire dataset** at each step.
 ```
 
 **OLS approach:**
+
 ```
 1. Calculate: β = (XᵀX)⁻¹Xᵀy
 2. Done! (one step, exact answer)
@@ -861,6 +777,7 @@ the error function, using the **entire dataset** at each step.
 - **When matrix inversion is problematic** (ill-conditioned matrices)
 
 **The difference from SGD:**
+
 ```
 Gradient Descent (GD):
 - Uses ALL data points in each iteration
@@ -883,10 +800,7 @@ For standard multiple linear regression, we use **OLS** because:
 - It's simpler (no hyperparameters like learning rate)
 - It's the established standard
 
-Gradient descent would work, but it's not how we typically solve linear 
-regression.
-
----
+Gradient descent would work, but it's not how we typically solve linear regression.
 
 ## Summary Comparison Table
 
@@ -899,16 +813,14 @@ regression.
 
 ## Why OLS is THE Answer
 
-**The question asks for the multiple linear regression model that estimates 
-coefficients by minimizing MSE.**
+**The question asks for the multiple linear regression model that estimates coefficients by minimizing MSE.**
 
 **Ordinary Least Squares (OLS):**
 1. ✓ Is THE standard multiple linear regression method
 2. ✓ Directly minimizes MSE (or equivalently, SSE)
 3. ✓ Estimates coefficients analytically
 4. ✓ Has been the standard since the 1800s
-5. ✓ Is what people mean when they say "linear regression" without 
-   qualification
+5. ✓ Is what people mean when they say "linear regression" without qualification
 
 **The other options:**
 - PCA: Not a regression model at all
@@ -917,25 +829,17 @@ coefficients by minimizing MSE.**
 
 **Key insight:**
 
-While SGD and GD **can** minimize MSE for linear regression, when someone asks 
-about "**the** multiple linear regression model" that minimizes MSE, they're 
-asking about the **standard, conventional method**, which is **Ordinary Least 
-Squares**.
+While SGD and GD **can** minimize MSE for linear regression, when someone asks about "**the** multiple linear regression model" that minimizes MSE, they're asking about the **standard, conventional method**, which is **Ordinary Least Squares**.
 
-It's like asking "What vehicle do people use to commute to work?" - while you 
-**could** say "helicopter" or "horse," the answer is "car" because that's the 
-standard, common method.
+It's like asking "What vehicle do people use to commute to work?" - while you **could** say "helicopter" or "horse," the answer is "car" because that's the standard, common method.
 
-**The answer is b. Ordinary least squares** because it is the standard 
-multiple linear regression method that directly minimizes MSE through an 
-analytical solution.
+**The answer is b. Ordinary least squares** because it is the standard multiple linear regression method that directly minimizes MSE through an analytical solution.
 
 ---
 
 ## Question 5
 
-**What type of issue occurs when a high-degree polynomial regression model 
-memorizes random noise in the data?**
+**What type of issue occurs when a high-degree polynomial regression model memorizes random noise in the data?**
 
 > Answer: a. Overfitting ✓
 
@@ -946,20 +850,16 @@ Let's first clarify what the question is describing:
 **Key concepts:**
 - **High-degree polynomial**: equations like y = β₀ + β₁x + β₂x² + ... + β₁₀x¹⁰
 - **Memorizes**: the model learns the training data too well
-- **Random noise**: statistical fluctuations, measurement errors, or 
-  irrelevant variations in the data
+- **Random noise**: statistical fluctuations, measurement errors, or irrelevant variations in the data
 
 **What's happening:**
-The model is fitting so closely to the training data that it's learning the 
-noise and random variations instead of the true underlying pattern.
+The model is fitting so closely to the training data that it's learning the noise and random variations instead of the true underlying pattern.
 
 ### Explanation of Each Option
 
 #### a. Overfitting ✓
 
-**What it is:** Overfitting occurs when a model learns the training data too 
-well, including its noise and random fluctuations, resulting in poor 
-performance on new, unseen data.
+**What it is:** Overfitting occurs when a model learns the training data too well, including its noise and random fluctuations, resulting in poor performance on new, unseen data.
 
 **Why this IS CORRECT:**
 
@@ -975,12 +875,14 @@ The question literally describes overfitting:
 **Simple example with data points:**
 
 Imagine you have 5 data points with some natural variation:
+
 ```
 True relationship: y = 2x + 1 (linear)
 But data has noise: (1, 3.2), (2, 5.1), (3, 6.8), (4, 9.2), (5, 10.9)
 ```
 
 **Low-degree polynomial (degree 1 - linear):**
+
 ```
 y = 2.06x + 0.94
 
@@ -990,6 +892,7 @@ Generalizes well to new data ✓
 ```
 
 **High-degree polynomial (degree 4):**
+
 ```
 y = 0.15x⁴ - 1.8x³ + 7.2x² - 8.5x + 5.1
 
@@ -1000,6 +903,7 @@ Terrible on new data ✗
 ```
 
 **Visual representation:**
+
 ```
 Underfitting (too simple):     Good fit:          Overfitting (too complex):
                                
@@ -1016,6 +920,7 @@ misses pattern               captures trend         every single point
 **3. The "memorization" problem:**
 
 **Training data performance:**
+
 ```
 Overfitted model on training data:
 - MSE ≈ 0 (almost perfect!)
@@ -1024,6 +929,7 @@ Overfitted model on training data:
 ```
 
 **New data performance:**
+
 ```
 Overfitted model on test data:
 - MSE is very high (terrible predictions!)
@@ -1042,12 +948,14 @@ The model has learned:
 
 **Scenario:** Predicting student test scores based on hours studied
 
-**True relationship:** 
+**True relationship:**
+
 ```
 Score ≈ 50 + 10 × hours (linear, with some natural variation)
 ```
 
 **Training data (5 students):**
+
 ```
 Hours: 1, 2, 3, 4, 5
 Scores: 62, 68, 81, 88, 95
@@ -1055,18 +963,21 @@ Scores: 62, 68, 81, 88, 95
 ```
 
 **Degree 1 polynomial (appropriate):**
+
 ```
 Score = 50.5 + 10.3 × hours
 Captures the trend, small errors on each point
 ```
 
 **Degree 4 polynomial (overfitting):**
+
 ```
 Score = 2.1x⁴ - 20.5x³ + 75.2x² - 90.8x + 95.9
 Perfect fit on these 5 students!
 ```
 
 **Testing on new student:**
+
 ```
 New student studies 3.5 hours
 True score should be around: 50 + 10(3.5) = 85
@@ -1111,12 +1022,9 @@ students and can't generalize.
 - Random forests (average multiple trees)
 - Bagging (bootstrap aggregating)
 
----
-
 #### b. Linear regression ✗
 
-**What it is:** Linear regression is a regression method that models 
-relationships using linear equations (straight lines or hyperplanes).
+**What it is:** Linear regression is a regression method that models relationships using linear equations (straight lines or hyperplanes).
 
 **Why this is WRONG:**
 
@@ -1152,13 +1060,9 @@ This is like asking "What disease do you have?" and answering "Doctor"
 
 But NOT for "What issue occurs when memorizing noise?"
 
----
-
 #### c. Underfitting ✗
 
-**What it is:** Underfitting occurs when a model is too simple to capture the 
-underlying pattern in the data, resulting in poor performance on both training 
-and test data.
+**What it is:** Underfitting occurs when a model is too simple to capture the underlying pattern in the data, resulting in poor performance on both training and test data.
 
 **Why this is WRONG:**
 
@@ -1208,8 +1112,7 @@ Misses the curve!              Memorizes every point!
 
 **4. Real-world example:**
 
-**Data:** Relationship between temperature and ice cream sales (clearly 
-non-linear)
+**Data:** Relationship between temperature and ice cream sales (clearly non-linear)
 
 ```
 Underfitting (degree 0 - constant):
@@ -1264,16 +1167,11 @@ Underfitting ← → Sweet Spot ← → Overfitting
 Too simple       Just right      Too complex
 ```
 
-The question describes the **right side** (overfitting), not the left side 
-(underfitting).
-
----
+The question describes the **right side** (overfitting), not the left side (underfitting).
 
 #### d. Gradient descent ✗
 
-**What it is:** Gradient descent is an iterative optimization algorithm used 
-to find the minimum of a function by moving in the direction of steepest 
-descent.
+**What it is:** Gradient descent is an iterative optimization algorithm used to find the minimum of a function by moving in the direction of steepest descent.
 
 **Why this is WRONG:**
 
@@ -1288,6 +1186,7 @@ descent.
 - You could use gradient descent and still overfit OR underfit
 
 **3. Wrong category of answer:**
+
 ```
 Question category: Types of modeling issues
 - Overfitting ✓
@@ -1304,6 +1203,7 @@ Gradient descent category: Optimization algorithms
 **4. You can overfit WITH or WITHOUT gradient descent:**
 
 **Overfitting WITH gradient descent:**
+
 ```
 Use gradient descent to fit degree-10 polynomial
 → Still overfits (memorizes noise)
@@ -1312,6 +1212,7 @@ Use gradient descent to fit degree-10 polynomial
 ```
 
 **Overfitting WITHOUT gradient descent:**
+
 ```
 Use OLS (analytical solution) to fit degree-10 polynomial
 → Still overfits (memorizes noise)
@@ -1335,6 +1236,7 @@ This process:
 ```
 
 **6. When gradient descent would be the RIGHT answer:**
+
 - "What algorithm uses learning rate and iterations?"
 - "What method updates parameters iteratively?"
 - "What optimization technique follows the negative gradient?"
@@ -1357,6 +1259,7 @@ But NOT for "What issue occurs when memorizing noise?"
 **Why high-degree polynomials overfit:**
 
 **1. Too many parameters:**
+
 ```
 Degree 1: y = β₀ + β₁x                    (2 parameters)
 Degree 2: y = β₀ + β₁x + β₂x²            (3 parameters)
@@ -1368,10 +1271,11 @@ With 5 data points and 11 parameters:
 ```
 
 **2. Excessive flexibility:**
-A degree-n polynomial can fit exactly n+1 points perfectly, creating wild 
-curves between points that have no basis in reality.
+
+A degree-n polynomial can fit exactly n+1 points perfectly, creating wild curves between points that have no basis in reality.
 
 **3. The fundamental problem:**
+
 ```
 Signal (true pattern) + Noise (random variation) = Observed data
 
@@ -1379,8 +1283,5 @@ Good model learns: Signal
 Overfitted model learns: Signal + Noise
 ```
 
-**The answer is a. Overfitting** because this is the precise definition of 
-overfitting: when a model (especially a complex one like a high-degree 
-polynomial) memorizes the training data including its random noise, resulting 
-in poor generalization to new data.
+**The answer is a. Overfitting** because this is the precise definition of overfitting: when a model (especially a complex one like a high-degree polynomial) memorizes the training data including its random noise, resulting in poor generalization to new data.
 
